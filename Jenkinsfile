@@ -10,13 +10,13 @@ pipeline {
 
         stage('Compile') {
             steps {
-                bat 'javac src/Calculator.java'
+                bat 'javac Calculator.java'
             }
         }
 
         stage('Run') {
             steps {
-                bat 'echo "10 5 +" | java -cp src Calculator'
+                bat 'echo "10 5 +" | java -cp  Calculator'
             }
         }
     }
